@@ -1,0 +1,45 @@
+@use "./variables";
+
+@mixin flex-box($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+%font-style-normal {
+    font-style: variables.$font-style;
+    font-weight: variables.$font-weight-normal;
+    font-size: variables.$font-size-normal;
+    color: variables.$text-color;
+}
+
+%font-style-bold {
+    font-style: variables.$font-style;
+    font-weight: variables.$font-weight-bold;
+    font-size: variables.$font-size-normal;
+    color: variables.$text-color;
+}
+
+%font-style-subheader {
+    font-style: variables.$font-style;
+    font-weight: variables.$font-weight-subhead;
+    font-size: variables.$font-size-subhead;
+    color: variables.$text-color;
+}
+
+%button {
+    font-family: 'fira sans';
+    font-weight: 400;
+    border: none;
+    border-radius: 0.15rem;
+    background-color: variables.$button-color;
+    color: variables.$text-color;
+    box-shadow: 0 0.1rem 0.1rem 0 #7597b8;
+}
+
+%button-header {
+    @extend %button;
+    background-color: variables.$container-color;
+    border-radius: 0rem 0.15rem 0.15rem 0rem;
+}

@@ -1,0 +1,48 @@
+@use '../../styles/base';
+@use '../../styles/variables';
+
+.footer-container {
+    @include base.flex-box($direction: row, $justify: space-around, $align: none);
+    grid-area: footer;
+    height: 9rem;
+    background-color: #1A1F24;
+}
+
+.footer-container h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-contact p {
+    font-weight: variables.$font-weight-bold;
+}
+
+.footer-contact span {
+    font-weight: variables.$font-weight-normal;
+}
+
+.footer-container h2, p {
+    color: #B8D5F1;
+}
+
+.footer-container .footer-read {
+    @include base.flex-box($direction: row, $justify: none, $align: center);
+}
+
+.footer-container .footer-social {
+    @include base.flex-box($direction: column, $justify: none, $align: center);
+}
+
+@media screen and (max-width: 615px) {
+    .footer-container .footer-read {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 447px) {
+    .footer-container {
+        height: 20rem;
+        @include base.flex-box();
+    }
+}
+

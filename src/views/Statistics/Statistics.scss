@@ -1,0 +1,90 @@
+@use '../../styles/base';
+@use '../../styles/variables';
+
+.statistics-wrapper {
+    @include base.flex-box($justify: none);
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.statistics-info {
+    @include base.flex-box($justify: none);
+    width: 60%;
+}
+
+.statistics-info .main-head--text {
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.statistics-info .main-head--description {
+    font-weight: variables.$font-weight-bold;
+    margin: 0;
+    margin-bottom: 4rem;
+    color: variables.$text-color;
+}
+
+.statistics-info img {
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.main-statistics {
+    @include base.flex-box();
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: variables.$wrapper-color;
+}
+
+.highscore-wrapper {
+    margin: 1rem 0 1rem 0;
+    width: 80%;
+}
+
+.highscore-info {
+    background-color: variables.$container-color;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+
+.highscore-info .highscore-title {
+    @extend %font-style-bold;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+    border-bottom: 2px solid variables.$wrapper-color;
+}
+
+.highscore-info--headers {
+    @include base.flex-box($direction: row, $justify: space-around, $align: none);
+}
+
+@media screen and (max-width: 1350px) {
+    .statistics-info {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .statistics-info {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .statistics-info {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .statistics-info {
+        width: 100%;
+    }
+}
+

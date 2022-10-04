@@ -1,0 +1,102 @@
+@use '../../styles/base';
+@use '../../styles/variables';
+
+.addComp-wrapper {
+    grid-area: main;
+}
+
+.addComp-wrapper .addComp-container {
+    @include base.flex-box($justify: none);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 0.5rem;
+    background-color: variables.$wrapper-color;
+}
+
+.addComp-container h2 {
+    margin-top: 2.5rem;
+    color: variables.$container-color;
+}
+
+.addComp-container p {
+    margin-left: 0.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.addComp-container .addComp-forms {
+    @include base.flex-box($justify: none, $align: flex-start);
+    width: 80%;
+    background-color: variables.$container-color;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.addComp-container .addComp-forms label {
+    margin: 2rem 0 0 2rem;
+    font-weight: variables.$font-weight-bold;
+}
+
+.addComp-container .addComp-forms input {
+    margin: 0.5rem 0 0 2rem;
+    height: 1.5rem;
+    width: 45%;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.addComp-forms .overlay-hidden {
+    display: none;
+}
+
+.addComp-forms .overlay-show {
+    @include base.flex-box($justify: none);
+    width: 100%;
+}
+
+.addComp-forms .overlay-show .overlay-button {
+    @extend %button;
+    font-weight: variables.$font-weight-bold;
+    height: 2rem;
+    width: 11rem;
+    margin: 2.5rem 0 2.5rem 0;
+}
+
+.addComp-forms .overlay-show h2 {
+    font-size: 1.2rem;
+    color: variables.$text-color;
+}
+
+.addComp-container .addComp-buttons {
+    @include base.flex-box($direction: row, $justify: space-around, $align: none);
+    width: 100%;
+}
+
+.addComp-container .addComp-buttons-hide{
+    display: none;
+}
+
+form .addComp-buttons input.button-add, .button-back {
+    @extend %button;
+    font-weight: variables.$font-weight-bold;
+    height: 2rem;
+    width: 11rem;
+    margin: 2.5rem 0 2.5rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .addComp-container .addComp-forms input {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    .addComp-container .addComp-forms input {
+        width: 70%;
+    }
+    .addComp-forms .addComp-buttons {
+        @include base.flex-box($direction: column, $justify: none);
+    }
+    .addComp-forms .addComp-buttons .buttton-add, .button-back {
+        margin: 0 0 1.5rem 0;
+    }
+}

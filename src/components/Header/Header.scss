@@ -1,0 +1,145 @@
+@use '../../styles/base.scss';
+
+.header-container {
+    @include base.flex-box($direction: row, $justify: space-around, $align: none);
+    grid-area: header;
+    height: 6rem;
+    flex-wrap: wrap;
+    background-color: #455768;
+}
+
+.header-left {
+    width: 21.5rem;
+    display: flex;
+}
+
+.header-my--page {
+    @include base.flex-box();
+}
+
+.header-my--page p {
+    margin: 0;
+    color: #B8D5F1;
+}
+
+.header-my--page:hover {
+    cursor: pointer;
+}
+
+.header-statistik {
+    @include base.flex-box();
+    margin-left: 3rem;
+}
+
+.header-statistik p {
+    margin: 0 0 0.5rem 0;
+    color: #B8D5F1;
+}
+
+.header-statistik:hover {
+    cursor: pointer;
+}
+
+.header-logo {
+    @include base.flex-box($direction: row);
+    scale: 75%;
+}
+
+.header-logo:hover {
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    width: 21.5rem;
+}
+
+.header-search {
+    @include base.flex-box($direction: row);
+    margin-right: 2rem;
+}
+
+.header-search input {
+    outline: none;
+    height: 2rem;
+    width: 10rem;
+    border: none;
+    border-radius: 0.15rem;
+    box-shadow: inset 0.1rem 0.1rem 0.1rem #7597b8;
+}
+
+.header-search input::placeholder {
+    padding-left: 0.5rem;
+    font-size: 0.7rem;
+}
+
+
+.search-button:hover {
+    cursor: pointer;
+}
+.header-search .search-button {
+    height: 2rem;
+    width: 3rem;
+    @extend %button-header;
+}
+
+.header-button {
+    @include base.flex-box($direction: row);
+}
+
+.header-button button {
+    @extend %button-header;
+    border-radius: 0.15rem;
+    height: 2rem;
+    width: 5rem;
+}
+
+@media screen and (max-width: 952px) {
+    .header-left {
+        width: 13rem;
+    }
+}
+
+@media screen and (max-width: 816px) {
+    .header-container {
+        height: 10rem;
+        @include base.flex-box($align: flex-start);
+    }
+    .header-left {
+        width: 13rem;
+        margin-left: 5rem;
+    }
+    .header-logo {
+        align-items: flex-start;
+        width: 14rem;
+        margin-left: 5rem;
+    }
+    .header-right {
+        flex-direction: column;
+        width: 12.5rem;
+    }
+    .header-right .header-search {
+        @include base.flex-box($direction: row, $justify: flex-start);
+    }
+    .header-right .header-button {
+        margin-top: 1rem;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .header-left {
+        margin: 0;
+    }
+    .header-logo {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .header-container {
+        height: 15rem;
+        @include base.flex-box($justify: none);
+        flex-wrap: wrap;
+    }
+}

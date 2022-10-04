@@ -1,0 +1,51 @@
+@use '../../styles/base';
+@use '../../styles/variables';
+
+.main-container {
+    grid-area: main;
+    width: 100%;
+}
+
+.main-container h2 {
+    font-weight: 700;
+}
+
+.main-container .main-skateboarding {
+    @include base.flex-box($justify: none);
+    margin-top: 5rem;
+}
+
+.main-container .main-skateboarding img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+}
+
+.main-container .main-counter--strike {
+    @include base.flex-box($justify: none);
+    border-radius: 0.15rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.main-container .main-counter--strike img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+}
+
+.main-skateboarding--matches {
+    @include base.flex-box();
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: variables.$wrapper-color;
+}
+
+.main-counter--strike--matches {
+    @include base.flex-box();
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: variables.$wrapper-color;
+}

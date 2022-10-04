@@ -1,0 +1,25 @@
+@use '../../styles/variables';
+
+.skateboard-result--wrapper {
+    margin: 1rem 0 1rem 0;
+    width: 80%;
+}
+
+.skateboard-result--info {
+    background-color: variables.$container-color;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.skateboard-result--info p {
+    font-weight: 500;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    color: variables.$text-color;
+}
+
+.skateboard-result--info span {
+    font-weight: variables.$font-weight-normal;
+}

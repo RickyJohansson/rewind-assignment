@@ -1,0 +1,1017 @@
+{
+    "users": [
+        {
+            "userId": 1,
+            "name": "Ricky",
+            "nickname": "Rickmeister",
+            "lastname": "Johansson",
+            "age": "30",
+            "sports": ["Skateboarding", "Counter-Strike"],
+            "skateboardingstatistics": 
+            {
+                "competitions": "13",
+                "wins": "1",
+                "losses": "12"
+            },
+            "skateboardingresults": [
+                {
+                "resultId": 1,
+                "competition": "Tampa Bay Skateboarding",
+                "winner": "Ryan Sheckler",
+                "placement": "4:a",
+                "date": "2021-08-21",
+                "participants": ["Ricky Johansson", "Ryan Sheckler", "Jason Statham",
+                 "Jackie Chan", "Ryan Reynolds", "Anders Andersson"]
+                },
+                {
+                "resultId": 2,
+                "competition": "Sacramento Skateboarding",
+                "winner": "Rodney Mullen",
+                "placement": "6:a",
+                "date": "2022-02-17",
+                "participants": ["Ricky Johansson", "Ryan Sheckler", "Rodney Mullen",
+                "Paul Rodriguez", "Jamie Thomas", "James Bear", "Chris Carlsson", "Bart Simpson"]
+                },
+                {
+                "resultId": 3,
+                "competition": "Karlstad Skating",
+                "winner": "Jakob Svensson",
+                "placement": "5:a",
+                "date": "2021-09-14",
+                "participants": ["Ricky Johansson", "Jakob Svensson", "Johan Johansson",
+                "Paul Björk", "Martin Johanssen", "Martin Stenmark", "Daniel Olsson",
+                 "Hampus Paulsson", "Björne Löf", "Christoffer Löfgren"]
+                },
+                {
+                "resultId": 4,
+                "competition": "Karlstad Skating",
+                "winner": "Albert Nyberg",
+                "placement": "2:a",
+                "date": "2022-03-19",
+                "participants": ["Ricky Johansson", "Jakob Svensson", "Albert Nyberg",
+                "Paul Björk", "Jean Soulet", "Martin Stenmark", "Daniel Olsson",
+                    "Hampus Paulsson", "Lars Kvist"]
+                },
+                {
+                "resultId": 5,
+                "competition": "Svenska Skate OS",
+                "winner": "Albert Nyberg",
+                "placement": "3:a",
+                "date": "2022-04-01",
+                "participants": ["Albert Nyberg", "Martin Stenmark", "Ricky Johansson",
+                "Arne Eka", "Jean Soulet", "Arvid Mark", "Daniel Olsson",
+                    "Rudolf Magnusson", "Lars Kvist"]
+                },
+                {
+                "resultId": 6,
+                "competition": "Svenska Skate OS",
+                "winner": "Jean Soulet",
+                "placement": "7:a",
+                "date": "2021-07-10",
+                "participants": ["Dan Broman", "Martin Stenmark", "Jean Soulet",
+                "Ricky Johansson", "Stefan Ek", "Arvid Mark", "Emil Larsson",
+                    "Simon Bo", "Lars Kvist"]
+                },
+                {
+                "resultId": 7,
+                "competition": "Värmlands Kampen",
+                "winner": "Stefan Ek",
+                "placement": "3:a",
+                "date": "2022-09-11",
+                "participants": ["Dan Broman", "Martin Stenmark", "Stefan Ek",
+                "Ricky Johansson", "Lars Kvist", "Arvid Mark", "Johan Karlsson", "Bruno Blad"]
+                },
+                {
+                "resultId": 8,
+                "competition": "Värmlands Kampen",
+                "winner": "Rupert Ru",
+                "placement": "6:a",
+                "date": "2020-10-15",
+                "participants": ["Simon Bo", "Ricky Johansson", "Stefan Ek",
+                "Mark Olofsson", "Lars Kvist", "Rupert Ru"]
+                },
+                {
+                "resultId": 9,
+                "competition": "Skåre Skojjen",
+                "winner": "Ricky Johansson",
+                "placement": "1:a",
+                "date": "2020-10-15",
+                "participants": ["Stefan Ek", "Ricky Johansson", "Arne Al",
+                "Ragnar God", "Al Bundy"]
+                },
+                {
+                "resultId": 10,
+                "competition": "Etnies Skateboarding",
+                "winner": "Omala Homama",
+                "placement": "9:a",
+                "date": "2019-11-29",
+                "participants": ["Chris Star", "Ricky Johansson", "Robert More", "Frank Enstein",
+                "Marc Heart", "Al Bundy", "Jackie Chan", "Albert Nyberg", "Romano Ezra",
+                 "Omala Homama", "Tyrrel Bones", "Yiai Iail", "Michael Myers", "Freddy Krueger"]
+                },
+                {
+                "resultId": 11,
+                "competition": "Vänskaps Tävling",
+                "winner": "Jerry Johansson",
+                "placement": "2:a",
+                "date": "2019-12-11",
+                "participants": ["Ricky Johansson", "Robert Dahlberg", "Andreas Dahlström", "Jerry Johansson"]
+                },
+                {
+                "resultId": 12,
+                "competition": "Zero",
+                "winner": "Jamie Thomas",
+                "placement": "5:a",
+                "date": "2019-11-29",
+                "participants": ["Mike Vallely", "Marc Heart", "Romano Ezra", "Jamie Thomas", "Ricky Johansson"]
+                },
+                {
+                "resultId": 13,
+                "competition": "Oldschool Skateboarding",
+                "winner": "Mike Vallely",
+                "placement": "5:a",
+                "date": "2019-11-29",
+                "participants": ["Abraham Ham", "Mike Vallely", "Romano Ezra", "Ricky Johansson", "Mike Vallely"]
+                }
+            ],
+            "counterstrikestatistics": 
+            {
+                "matches": "343",
+                "wins": "201",
+                "losses": "142"
+            },
+            "counterstrikeresults": [
+                {
+                    "resultId": 1,
+                    "match": "team",
+                    "status": "vinst",
+                    "date": "2022-09-20",
+                    "redteam": ["Rickmeister", "xQc", "csKing", "csMaster"],
+                    "blueteam": ["Icee", "aimKing", "shootah", "xreloadx"]
+                },
+                {
+                    "resultId": 2,
+                    "match": "team",
+                    "status": "förlust",
+                    "date": "2022-09-18",
+                    "redteam": ["csKing", "xQc", "Indo", "xreloadx"],
+                    "blueteam": ["Rickmeister", "Llama", "RecZ", "Icee"]
+                },
+                {
+                    "resultId": 3,
+                    "match": "team",
+                    "status": "förlust",
+                    "date": "2022-09-18",
+                    "redteam": ["xreloadx", "mYnx"],
+                    "blueteam": ["grindR", "Rickmeister"]
+                },
+                {
+                    "resultId": 4,
+                    "match": "team",
+                    "status": "vinst",
+                    "date": "2022-09-17",
+                    "redteam": ["xreloadx", "mYnx"],
+                    "blueteam": ["grindR", "Rickmeister"]
+                },
+                {
+                    "resultId": 5,
+                    "match": "team",
+                    "status": "förlust",
+                    "date": "2022-09-16",
+                    "redteam": ["GrindR", "Rulah"],
+                    "blueteam": ["Rickmeister", "GenG"]
+                },
+                {
+                    "resultId": 6,
+                    "match": "team",
+                    "status": "förlust",
+                    "date": "2022-09-16",
+                    "redteam": ["Aimah", "BananaH"],
+                    "blueteam": ["Rickmeister", "GenG"]
+                },
+                {
+                    "resultId": 7,
+                    "match": "team",
+                    "status": "förlust",
+                    "date": "2022-09-16",
+                    "redteam": ["BananaH", "GrindR", "Aimah"],
+                    "blueteam": ["GrindR", "Rickmeister", "GenG"]
+                },
+                {
+                    "resultId": 8,
+                    "match": "team",
+                    "status": "förlust",
+                    "date": "2022-09-16",
+                    "redteam": ["BananaH", "GrindR", "Aimah"],
+                    "blueteam": ["GrindR", "Rickmeister", "GenG"]
+                },
+                {
+                    "resultId": 9,
+                    "match": "team",
+                    "status": "förlust",
+                    "date": "2022-09-13",
+                    "redteam": ["GrimReaper", "Hangah", "Shootah", "Rickmeister"],
+                    "blueteam": ["Grant", "Hymui", "ShaolinAim", "xQc"]
+                },
+                {
+                    "resultId": 10,
+                    "match": "team",
+                    "status": "vinst",
+                    "date": "2022-09-13",
+                    "redteam": ["Hymui", "Jamal", "Adrianxz", "Hoovu"],
+                    "blueteam": ["Lam3ye", "Loook", "Eezzyy", "Rickmeister"]
+                },
+                {
+                    "resultId": 11,
+                    "match": "team",
+                    "status": "vinst",
+                    "date": "2022-09-13",
+                    "redteam": ["Hymui", "Jamal", "Myran", "Hoovu"],
+                    "blueteam": ["Lam3ye", "Loook", "Eezzyy", "Rickmeister"]
+                },
+                {
+                    "resultId": 12,
+                    "match": "team",
+                    "status": "vinst",
+                    "date": "2022-09-11",
+                    "redteam": ["AlfonsCS", "Jamal", "Myran", "Hoovu"],
+                    "blueteam": ["Jaull", "Rickmeister", "Weaei", "BaseCS"]
+                },
+                {
+                    "resultId": 13,
+                    "match": "team",
+                    "status": "förlust",
+                    "date": "2022-09-10",
+                    "redteam": ["Hoovu", "BaseCS", "Thuuug"],
+                    "blueteam": ["Weaei", "OmpaG", "Rickmeister"]
+                },
+                {
+                    "resultId": 14,
+                    "match": "team",
+                    "status": "oavgjort",
+                    "date": "2022-09-08",
+                    "redteam": ["Hoovu", "BaseCS", "Thuuug"],
+                    "blueteam": ["Weaei", "OmpaG", "Rickmeister"]
+                }
+            ]
+        },
+
+
+        {
+            "userId": 2,
+            "name": "Ryan",
+            "nickname": "none",
+            "lastname": "Sheckler",
+            "age": "32",
+            "sports": ["Skateboarding"],
+            "skateboardingstatistics": 
+            {
+                "competitions": "88",
+                "wins": "52",
+                "losses": "36"
+            },
+            "skateboardingresults": [
+                {
+                "resultId": 1,
+                "competition": "Tampa Bay Skateboarding",
+                "winner": "Ryan Sheckler",
+                "placement": "1:a",
+                "date": "2021-08-21",
+                "participants": ["Ricky Johansson", "Ryan Sheckler", "Jason Statham",
+                 "Jackie Chan", "Ryan Reynolds", "Anders Andersson"]
+                },
+                {
+                "resultId": 2,
+                "competition": "Sacramento Skateboarding",
+                "winner": "Ryan Sheckler",
+                "placement": "1:a",
+                "date": "2021-09-02",
+                "participants": ["Mark Johansson", "Ryan Sheckler", "Adam Adamsson",
+                 "Jet Li", "Ryan Reynolds", "Anders Andersson", "Beatrice Thomsson"]
+                },
+                {
+                "resultId": 3,
+                "competition": "Burton Skateboarding",
+                "winner": "Mark Johnsson",
+                "placement": "2:a",
+                "date": "2022-01-02",
+                "participants": ["Mark Andersson", "Ryan Sheckler", "Rodney Mullen",
+                "Tony Hawk", "Mark Johnsson"]
+                },
+                {
+                "resultId": 4,
+                "competition": "Sacramento Skateboarding",
+                "winner": "Rodney Mullen",
+                "placement": "3:a",
+                "date": "2022-02-17",
+                "participants": ["Ricky Johansson", "Ryan Sheckler", "Rodney Mullen",
+                "Paul Rodriguez", "Jamie Thomas", "James Bear", "Chris Carlsson", "Bart Simpson"]
+                },
+                {
+                "resultId": 5,
+                "competition": "Tampa Bay Skateboarding",
+                "winner": "Ryan Sheckler",
+                "placement": "1:a",
+                "date": "2022-08-20",
+                "participants": ["Ryan Sheckler", "Rodney Mullen", "Anders Andersson",
+                "Paul Rodriguez", "Jamie Thomas", "James Bear", "Chris Carlsson", "Mark Johnsson", "Tony Hawk"]
+                }
+            ],
+            "counterstrikestatistics": 
+            {
+                "matches": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "counterstrikeresults": [
+            {
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 3,
+            "name": "Jamie",
+            "nickname": "none",
+            "lastname": "Thomas",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "90",
+                "wins": "24",
+                "losses": "66"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 4,
+            "name": "Rodney",
+            "nickname": "none",
+            "lastname": "Mullen",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "55",
+                "wins": "50",
+                "losses": "6"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 5,
+            "name": "Mike",
+            "nickname": "none",
+            "lastname": "Vallelly",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "32",
+                "wins": "12",
+                "losses": "20"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 6,
+            "name": "Paul",
+            "nickname": "none",
+            "lastname": "Rodriguez",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "21",
+                "wins": "12",
+                "losses": "9"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 7,
+            "name": "Tony",
+            "nickname": "none",
+            "lastname": "Hawk",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "30",
+                "wins": "20",
+                "losses": "10"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 8,
+            "name": "Marc",
+            "nickname": "none",
+            "lastname": "Johnsson",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "23",
+                "wins": "4",
+                "losses": "19"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+        {
+            "userId": 9,
+            "name": "Rob",
+            "nickname": "none",
+            "lastname": "Dyrdek",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "37",
+                "wins": "14",
+                "losses": "23"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+        {
+            "userId": 10,
+            "name": "Ryan",
+            "nickname": "none",
+            "lastname": "Reynolds",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "19",
+                "wins": "14",
+                "losses": "5"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+        {
+            "userId": 11,
+            "name": "",
+            "nickname": "BaseCS",
+            "lastname": "",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "2594",
+                "wins": "2352",
+                "losses": "242"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+        {
+            "userId": 12,
+            "name": "",
+            "nickname": "GenG",
+            "lastname": "",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "5477",
+                "wins": "4175",
+                "losses": "1302"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 13,
+            "name": "",
+            "nickname": "BananaH",
+            "lastname": "",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "4051",
+                "wins": "1708",
+                "losses": "2341"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 14,
+            "name": "",
+            "nickname": "mYnx",
+            "lastname": "",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "3220",
+                "wins": "1595",
+                "losses": "1625"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 15,
+            "name": "",
+            "nickname": "xReloadx",
+            "lastname": "",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "4900",
+                "wins": "3902",
+                "losses": "988"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 16,
+            "name": "",
+            "nickname": "Lam3ye",
+            "lastname": "",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "2790",
+                "wins": "1290",
+                "losses": "1500"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 17,
+            "name": "",
+            "nickname": "Bulls3Y3",
+            "lastname": "",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "3600",
+                "wins": "1352",
+                "losses": "2248"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 18,
+            "name": "",
+            "nickname": "G3KkoH",
+            "lastname": "",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "2136",
+                "wins": "1801",
+                "losses": "335"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 19,
+            "name": "",
+            "nickname": "Bo0ne5",
+            "lastname": "",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "4088",
+                "wins": "1410",
+                "losses": "2678"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        },
+
+
+        {
+            "userId": 20,
+            "name": "",
+            "nickname": "Cypher",
+            "lastname": "",
+            "age": "",
+            "sports": [""],
+            "skateboardingstatistics": 
+            {
+                "competitions": "0",
+                "wins": "0",
+                "losses": "0"
+            },
+            "skateboardingresults": [{
+                "resultId": 1,
+                "competition": "",
+                "winner": "",
+                "placement": "",
+                "date": "",
+                "participants": [""]
+                }],
+            "counterstrikestatistics": 
+            {
+                "matches": "7820",
+                "wins": "6942",
+                "losses": "878"
+            },
+            "counterstrikeresults": [{
+                "resultId": 1,
+                "match": "",
+                "status": "",
+                "date": "",
+                "redteam": [""],
+                "blueteam": [""]
+            }]
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+@use '../../styles/base';
+@use '../../styles/variables';
+
+.profile-wrapper {
+    @include base.flex-box($justify: none);
+    grid-area: main;
+}
+
+.profile-wrapper .profile-header {
+    margin: 3.5rem 0 2rem 0;
+}
+
+.profile-wrapper .profile-content {
+    @include base.flex-box($justify: none);
+    background-color: variables.$wrapper-color;
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+    width: 80%;
+}
+
+.profile-content .info-personal {
+    @include base.flex-box($justify: none, $align: none);
+    margin-top: 3rem;
+    width: 85%;
+    border-radius: 0.5rem;
+    background-color: variables.$container-color;
+}
+
+.profile-content .info-personal p {
+    @extend %font-style-bold;
+    margin: 0;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.profile-content span {
+    font-weight: variables.$font-weight-normal;
+}
+
+.profile-content .info-game {
+    width: 85%;
+    margin: 2rem 0 2rem 0;
+    border-radius: 0.5rem;
+    background-color: variables.$container-color;
+}
+
+.info-game .info-game--header {
+    text-align: center;
+}
+
+.info-game .info-game--stats {
+    display: flex;
+}
+
+.info-game--stats .info-stats {
+    width: 50%;
+}
+
+.info-game--stats .info-stats p {
+    margin-left: 3rem;
+    font-weight: variables.$font-weight-bold;
+    color: variables.$text-color;
+
+}
+
+.info-stats .info-stats--header {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.info-game--stats .info-counterstrike--stats {
+    width: 50%;
+}
+
+.info-stats .info-button {
+    @extend %button;
+    font-weight: variables.$font-weight-bold;
+    height: 2rem;
+    width: 9rem;
+    margin: 1rem 0 2.5rem 3rem;
+}
+
+@media screen and (max-width: 965px) {
+
+    .profile-wrapper {
+        width: 100%;
+    }
+
+    .profile-wrapper h2 {
+        font-size: 1.2rem;
+    }
+
+    .info-stats .info-stats--header {
+        font-size: 1.1rem;
+    }
+
+    .info-game--stats .info-stats p {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    .info-game--stats {
+        @include base.flex-box($justify: none, $align: none);
+    }
+
+    .info-game--stats .info-stats {
+        @include base.flex-box($justify: none, $align: flex-start);
+        width: 100%;
+        margin-left: 25%;
+    }
+    .info-stats .info-button {
+        margin: 2rem 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .info-game--stats .info-stats {
+        margin-left: 0;
+    }
+}
+

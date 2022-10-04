@@ -1,0 +1,24 @@
+@use '../../styles/base';
+@use '../../styles/variables';
+
+.profile-card--wrapper {
+    @include base.flex-box($direction: row, $justify: space-around);
+    margin: 1.5rem auto;
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+.profile-card--wrapper .profile-name {
+    font-weight: variables.$font-weight-bold;
+}
+
+.profile-card--wrapper .profile-name span {
+    font-weight: variables.$font-weight-normal;
+}
+
+
+.profile-card--wrapper .button {
+    @extend %button;
+    height: 2rem;
+    width: 8rem;
+}
