@@ -13,6 +13,10 @@
 .main-container .main-skateboarding {
     @include base.flex-box($justify: none);
     margin-top: 5rem;
+
+    .text-margin {
+        margin-bottom: 3rem;
+    }
 }
 
 .main-container .main-skateboarding img {
