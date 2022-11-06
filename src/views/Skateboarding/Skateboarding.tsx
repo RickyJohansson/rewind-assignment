@@ -28,10 +28,24 @@ const Skateboarding = ({result, setResult, personalInfo}: Props) => {
     useEffect(() => {
         if (personalInfo.userId === 1) {
             setButtonVisible(true);
-            setResult(jsonData.users[0].skateboardingresults)
+            const sortUserResults = [...jsonData.users[0].skateboardingresults].sort((a, b) => {
+                if (b.date <= a.date) {
+                    return b.date <= a.date ? -1 : 1;
+                } else {
+                    return a.date > b.date ? -1 : 1;
+                }
+            });
+            setResult(sortUserResults)
         } else if (personalInfo.userId === 2) {
             setButtonVisible(false);
-            setResult(jsonData.users[1].skateboardingresults)
+            const sortUserResults = [...jsonData.users[1].skateboardingresults].sort((a, b) => {
+                if (b.date <= a.date) {
+                    return b.date <= a.date ? -1 : 1;
+                } else {
+                    return a.date > b.date ? -1 : 1;
+                }
+            });
+            setResult(sortUserResults)
         }
     }, []);
 
@@ -43,19 +57,23 @@ const Skateboarding = ({result, setResult, personalInfo}: Props) => {
 
     const handleOptions = (e: any) => {
 
+        const dateSkate = [...jsonData.users[personalInfo.userId - 1].skateboardingresults].sort((a, b) => {
+            if (b.date <= a.date) {
+                return b.date <= a.date ? -1 : 1;
+            } else {
+                return a.date > b.date ? -1 : 1;
+            }
+        });
+
         if (e.target.value === "Alla tävlingar") {
 
-            setResult(jsonData.users[personalInfo.userId - 1].skateboardingresults);
+            const allSkateMatches = [...dateSkate].filter((skate) => {
+                return skate;
+            });
+            setResult(allSkateMatches);
 
         } else if (e.target.value === "Senaste 10 tävlingar") {
 
-            const dateSkate = [...result].sort((a, b) => {
-                if (b.date <= a.date) {
-                    return b.date <= a.date ? -1 : 1;
-                } else {
-                    return a.date > b.date ? -1 : 1;
-                }
-            });
 
             const tenSkateMatches = [...dateSkate].filter((skate) => {
                 if (skateCount < 10) {

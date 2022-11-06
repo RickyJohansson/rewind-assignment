@@ -18,7 +18,14 @@ const Counterstrike = ({csResult, setCsResult}: Props) => {
     let csCount = 0;
 
     useEffect(() => {
-        setCsResult(jsonData.users[0].counterstrikeresults)
+        const sortUserResults = [...jsonData.users[0].counterstrikeresults].sort((a, b) => {
+            if (b.date <= a.date) {
+                return b.date <= a.date ? -1 : 1;
+            } else {
+                return a.date > b.date ? -1 : 1;
+            }
+        });
+        setCsResult(sortUserResults);
     }, []);
 
     const navigateAddMatch = () => {
@@ -27,19 +34,22 @@ const Counterstrike = ({csResult, setCsResult}: Props) => {
 
     const handleOptions = (e: any) => {
 
+        const dateCs = [...jsonData.users[0].counterstrikeresults].sort((a, b) => {
+            if (b.date <= a.date) {
+                return b.date <= a.date ? -1 : 1;
+            } else {
+                return a.date > b.date ? -1 : 1;
+            }
+        });
+
         if (e.target.value === "Alla matcher") {
 
-            setCsResult(jsonData.users[0].counterstrikeresults);
+            const allCsGames = [...dateCs].filter((csGame) => {
+                return csGame;
+            });
+            setCsResult(allCsGames);
 
         } else if (e.target.value === "Senaste 10 matcher") {
-
-            const dateCs = [...jsonData.users[0].counterstrikeresults].sort((a, b) => {
-                if (b.date <= a.date) {
-                    return b.date <= a.date ? -1 : 1;
-                } else {
-                    return a.date > b.date ? -1 : 1;
-                }
-            });
 
             const tenCsMatches = [...dateCs].filter((cs) => {
                 if (csCount < 10) {

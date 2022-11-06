@@ -17,11 +17,9 @@ const Main = () => {
     let skateCounter = 0;
     let reversedSkateResults = [...skateboardResults].reverse();
     const tenSkateboardResults = reversedSkateResults.map((result) => {   
-        if (skateCounter < 10) {
+        if (skateCounter < 10 && reversedSkateResults.length > 0) {
             skateCounter ++;
             return < SkateboardResult key={result.resultId} result={result}/>
-        } else if (skateboardResults.length === 0) {
-            return <p>Du har för närvarande inga tillagda tävlingar</p>
         }
     });
 
@@ -29,11 +27,9 @@ const Main = () => {
     let csCounter = 0;
     let reversedCsResults = [...counterstrikeResults].reverse();
     const tenCsResults = reversedCsResults.map((result) => {   
-        if (csCounter < 10) {
+        if (csCounter < 10 && reversedCsResults.length > 0) {
             csCounter ++;
             return < CounterstrikeResult key={result.resultId} result={result}/>
-        } else if (counterstrikeResults.length === 0) {
-            return <p>Du har för närvarande inga tillagda matcher</p>
         }
     });
 
@@ -45,14 +41,14 @@ const Main = () => {
                 <h2>Skateboarding</h2>
                 <img src={skateboarding} alt="" />
                 <section className="main-skateboarding--matches">
-                    {tenSkateboardResults}
+                    { reversedSkateResults.length > 0 ? tenSkateboardResults : <p>Du har inga inlagda tävlingar</p>}
                 </section>
             </section>
             <section className="main-counter--strike">
                 <h2>Counter-Strike</h2>
                 <img src={counterStrike} alt="" />
                 <section className="main-counter--strike--matches">
-                    {tenCsResults}
+                    { reversedCsResults.length > 0 ? tenCsResults : <p>Du har inga inlagda matcher</p>}
                 </section>
             </section>
 

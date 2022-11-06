@@ -63,7 +63,7 @@ const Profile = ({profileName, personalInfo}: Props) => {
                             <p>Vinster: <span>{ personalInfo.skateboardingstatistics.wins }</span></p>
                             <p>Förluster: <span>{ personalInfo.skateboardingstatistics.losses }</span></p>
                             <p>V/F: <span>{ VFskate.toFixed(2) }</span></p>
-                            <button className="info-button" onClick={navigateSkateboard}>Dina Tävlingar</button>
+                            <button className="info-button" onClick={navigateSkateboard}>Tävlingar</button>
                         </section>
                         <section className="info-stats">
                             <p className="info-stats--header">Counter-Strike</p>

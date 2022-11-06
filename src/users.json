@@ -315,6 +315,69 @@
                 "date": "2022-08-20",
                 "participants": ["Ryan Sheckler", "Rodney Mullen", "Anders Andersson",
                 "Paul Rodriguez", "Jamie Thomas", "James Bear", "Chris Carlsson", "Mark Johnsson", "Tony Hawk"]
+                },
+                {
+                "resultId": 6,
+                "competition": "Burton Skateboarding",
+                "winner": "Mark Johnsson",
+                "placement": "2:a",
+                "date": "2021-07-07",
+                "participants": ["Ryan Sheckler", "Rodney Mullen",
+                "Tony Hawk"]
+                },
+                {
+                "resultId": 7,
+                "competition": "Tampa Bay Skateboarding",
+                "winner": "Mark Johnsson",
+                "placement": "2:a",
+                "date": "2020-10-10",
+                "participants": ["Mark Andersson", "Ryan Sheckler",
+                "Tony Hawk", "Mark Johnsson"]
+                },
+                {
+                "resultId": 8,
+                "competition": "Sacramento Skateboarding",
+                "winner": "Ryan Sheckler",
+                "placement": "1:a",
+                "date": "2021-04-14",
+                "participants": ["Mark Johansson", "Ryan Sheckler", "Adam Adamsson",
+                 "Ryan Reynolds", "Anders Andersson", "Beatrice Thomsson"]
+                }
+                ,
+                {
+                "resultId": 9,
+                "competition": "Sacramento Skateboarding",
+                "winner": "Ryan Sheckler",
+                "placement": "2:a",
+                "date": "2021-01-11",
+                "participants": ["Mark Johansson", "Ryan Sheckler", "Adam Adamsson",
+                 "Ryan Reynolds", "Anders Andersson", "Beatrice Thomsson"]
+                },
+                {
+                "resultId": 10,
+                "competition": "Sacramento Skateboarding",
+                "winner": "Ryan Sheckler",
+                "placement": "3:a",
+                "date": "2021-09-14",
+                "participants": ["Mark Johansson", "Ryan Sheckler", "Adam Adamsson",
+                 "Ryan Reynolds", "Anders Andersson", "Beatrice Thomsson"]
+                },
+                {
+                "resultId": 11,
+                "competition": "Tampa Skateboarding",
+                "winner": "Ryan Sheckler",
+                "placement": "2:a",
+                "date": "2021-02-12",
+                "participants": ["Mark Johansson", "Ryan Sheckler", "Adam Adamsson"]
+                },
+                {
+                "resultId": 12,
+                "competition": "Sacramento Skateboarding",
+                "winner": "Ryan Sheckler",
+                "placement": "1:a",
+                "date": "2020-08-18",
+                "participants": ["Mark Johansson", "Ryan Sheckler", "Adam Adamsson",
+                 "Ryan Reynolds", "Anders Andersson"]
                 }
             ],
             "counterstrikestatistics": 
