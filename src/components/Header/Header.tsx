@@ -41,11 +41,12 @@ const Header = ({setProfileOverlay, setFilterProfiles, setPersonalInfo, setProfi
     const handleSearch = () => {
         setProfileOverlay(false);
         const filteredSearch = jsonData.users.filter((user) => {
-            if (`${user.name}` === '') {
+            if (`${user.name}` === '' && `${user.nickname}` === '' || search === '') {
                 return
             } else if (`${user.name} ${user.lastname}`.toLowerCase() === search ||
-             `${user.name} ${user.lastname}` === search
-            || user.name === search || user.name.toLowerCase() === search) {
+             `${user.name} ${user.lastname}` === search || `${user.nickname}` === search
+             || `${user.fullname}` === search ||  `${user.name}`.toUpperCase() === search
+             || `${user.lastname}` === search || `${user.name}` === search || `${user.name}`.toLowerCase() === search) {
                 return user;
             }
         });
@@ -70,7 +71,7 @@ const Header = ({setProfileOverlay, setFilterProfiles, setPersonalInfo, setProfi
             </section>
             <section className="header-right">
                 <section className="header-search">
-                    <input type="text" placeholder="SÖK" onKeyUp={(e: any) => setSearch(e.target.value)} />
+                    <input type="text" placeholder="Sök efter en spelare" onKeyUp={(e: any) => setSearch(e.target.value)} />
                     <button className="search-button" onClick={handleSearch}>SÖK</button>
                 </section>
                 <section className="header-button">

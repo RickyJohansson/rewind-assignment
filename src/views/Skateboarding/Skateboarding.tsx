@@ -2,7 +2,7 @@ import './Skateboarding.scss';
 import SkateboardResult from '../../components/SkateboardResult/SkateboardResult';
 import { Competition } from '../../models/competitionInterface';
 import { ProfileInfo } from '../../models/profileInterface';
-import jsonData from '../../users.json'
+import jsonData from '../../users.json';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -10,15 +10,16 @@ import { useState } from 'react';
 interface Props {
     result: Competition[];
     setResult: (result: Competition[]) => void;
-    personalInfo: ProfileInfo;
+    profileName: string;
 }
 
 
-const Skateboarding = ({result, setResult, personalInfo}: Props) => {
+const Skateboarding = ({result, setResult, profileName}: Props) => {
 
     const navigate = useNavigate();
 
     const [buttonVisible, setButtonVisible] = useState<Boolean>(true);
+    const [latestWins, setLatestWins] = useState<Boolean>(false);
 
     let skateCount = 0;
 
@@ -26,7 +27,7 @@ const Skateboarding = ({result, setResult, personalInfo}: Props) => {
 
 
     useEffect(() => {
-        if (personalInfo.userId === 1) {
+        if (profileName === "Ricky Johansson") {
             setButtonVisible(true);
             const sortUserResults = [...jsonData.users[0].skateboardingresults].sort((a, b) => {
                 if (b.date <= a.date) {
@@ -35,8 +36,9 @@ const Skateboarding = ({result, setResult, personalInfo}: Props) => {
                     return a.date > b.date ? -1 : 1;
                 }
             });
+            setLatestWins(false);
             setResult(sortUserResults)
-        } else if (personalInfo.userId === 2) {
+        } else if (profileName === "Ryan Sheckler") {
             setButtonVisible(false);
             const sortUserResults = [...jsonData.users[1].skateboardingresults].sort((a, b) => {
                 if (b.date <= a.date) {
@@ -45,6 +47,7 @@ const Skateboarding = ({result, setResult, personalInfo}: Props) => {
                     return a.date > b.date ? -1 : 1;
                 }
             });
+            setLatestWins(false);
             setResult(sortUserResults)
         }
     }, []);
@@ -57,36 +60,110 @@ const Skateboarding = ({result, setResult, personalInfo}: Props) => {
 
     const handleOptions = (e: any) => {
 
-        const dateSkate = [...jsonData.users[personalInfo.userId - 1].skateboardingresults].sort((a, b) => {
-            if (b.date <= a.date) {
-                return b.date <= a.date ? -1 : 1;
-            } else {
-                return a.date > b.date ? -1 : 1;
-            }
-        });
+        if (profileName == "Ricky Johansson") {
 
-        if (e.target.value === "Alla tävlingar") {
-
-            const allSkateMatches = [...dateSkate].filter((skate) => {
-                return skate;
-            });
-            setResult(allSkateMatches);
-
-        } else if (e.target.value === "Senaste 10 tävlingar") {
-
-
-            const tenSkateMatches = [...dateSkate].filter((skate) => {
-                if (skateCount < 10) {
-                    skateCount ++;
-                    return skate;
+            const dateSkate = [...jsonData.users[0].skateboardingresults].sort((a, b) => {
+                if (b.date <= a.date) {
+                    return b.date <= a.date ? -1 : 1;
+                } else {
+                    return a.date > b.date ? -1 : 1;
                 }
             });
-            setResult(tenSkateMatches);
+
+            if (e.target.value === "Alla tävlingar") {
+
+                const allSkateMatches = [...dateSkate].filter((skate) => {
+                    return skate;
+                });
+                setLatestWins(false);
+                setResult(allSkateMatches);
+
+            } else if (e.target.value === "Senaste 10 tävlingar") {
+
+
+                const tenSkateMatches = [...dateSkate].filter((skate) => {
+                    if (skateCount < 10) {
+                        skateCount ++;
+                        return skate;
+                    }
+                });
+                setLatestWins(false);
+                setResult(tenSkateMatches);
+
+            } else if (e.target.value === "Vinster senaste 10 matcher") {
+
+                setLatestWins(true);
+
+                const tenSkateMatches = [...dateSkate].filter((skate) => {
+                    if (skateCount < 10) {
+                        skateCount ++;
+                        return skate;
+                    }
+                });
+
+                const tenLastWins = [...tenSkateMatches].filter((skate) => {
+                    if (skate.placement == "1:a" || skate.winner == `${profileName}`) {
+                        return skate;
+                    }
+                });
+                setResult(tenLastWins);
+
+            }
         }
-    }
+        if (profileName == "Ryan Sheckler") {
+
+            const dateSkate = [...jsonData.users[1].skateboardingresults].sort((a, b) => {
+                if (b.date <= a.date) {
+                    return b.date <= a.date ? -1 : 1;
+                } else {
+                    return a.date > b.date ? -1 : 1;
+                }
+            });
+
+            if (e.target.value === "Alla tävlingar") {
+
+                const allSkateMatches = [...dateSkate].filter((skate) => {
+                    return skate;
+                });
+                setLatestWins(false);
+                setResult(allSkateMatches);
+
+            } else if (e.target.value === "Senaste 10 tävlingar") {
+
+
+                const tenSkateMatches = [...dateSkate].filter((skate) => {
+                    if (skateCount < 10) {
+                        skateCount ++;
+                        return skate;
+                    }
+                });
+                setLatestWins(false);
+                setResult(tenSkateMatches);
+
+            } else if (e.target.value === "Vinster senaste 10 matcher") {
+
+                setLatestWins(true);
+
+                const tenSkateMatches = [...dateSkate].filter((skate) => {
+                    if (skateCount < 10) {
+                        skateCount ++;
+                        return skate;
+                    }
+                });
+
+                const tenLastWins = [...tenSkateMatches].filter((skate) => {
+                    if (skate.placement == "1:a" || skate.winner == `${profileName}`) {
+                        return skate;
+                    }
+                });
+                setResult(tenLastWins);
+
+            }
+        }
+    } 
 
     const SkateboardResults = result.map((result) => {
-        return < SkateboardResult key={result.resultId} result={result}/>
+        return < SkateboardResult key={result.resultId} result={result} profileName={profileName}/>
     });
 
 
@@ -101,8 +178,10 @@ const Skateboarding = ({result, setResult, personalInfo}: Props) => {
                     <select className="competition-filtering" onChange={(e) => {handleOptions(e)}}>
                         <option value="Alla tävlingar">Alla tävlingar</option>
                         <option value="Senaste 10 tävlingar">Senaste 10 tävlingar</option>
+                        <option value="Vinster senaste 10 matcher">Vinster senaste 10 matcher</option>
                     </select>
                 </section>
+                { latestWins ? <p>Antal vinster: {result.length} av 10</p> : '' }
                 { SkateboardResults }
             </main>
         </div>

@@ -1,11 +1,14 @@
 import './SkateboardResult.scss'
 import { Competition } from '../../models/competitionInterface';
+import jsonData from '../../users.json';
 
 interface Props {
     result: Competition;
+    profileName: string;
 }
 
-const SkateboardResult = ({result}: Props) => {
+const SkateboardResult = ({result, profileName}: Props) => {
+
 
     return(
         <div className="skateboard-result--wrapper">
@@ -14,7 +17,7 @@ const SkateboardResult = ({result}: Props) => {
                 <p>Vinnare: <span>{ result.winner }</span></p>
                 <p>Din placering: <span>{ result.placement }</span></p>
                 <p>Datum: <span>{ result.date }</span></p>
-                <p>Deltagare: <span>{result.participants.join(" - ")}</span> </p>
+                <p>Deltagare: <span>{result.participants.filter((participant) => Boolean(participant)).join(" - ")}</span> </p>
             </section>
         </div>
     )

@@ -30,11 +30,11 @@ const CounterStrikeResult = ({result}: Props) => {
             <section className="counterstrike-result-info">
                 <p>Match: <span>{result.match}</span></p>
                 <p>Status: <span>{result.status}</span></p>
-                <p>Vinnare: <span>{winners.join(" - ")}</span></p>
-                <p>Förlorare: <span>{loosers.join(" - ")}</span></p>
+                <p>Vinnare: <span>{winners.filter(winner => Boolean(winner)).join(" - ")}</span></p>
+                <p>Förlorare: <span>{loosers.filter(looser => Boolean(looser)).join(" - ")}</span></p>
                 <p>Datum: <span>{result.date}</span></p>
-                <p>Röda laget: <span>{result.redteam.join(" - ")}</span></p>
-                <p>Blå laget: <span>{result.blueteam.join(" - ")}</span></p>
+                <p>Röda laget: <span>{result.redteam.filter(player => Boolean(player)).join(" - ")}</span></p>
+                <p>Blå laget: <span>{result.blueteam.filter(player => Boolean(player)).join(" - ")}</span></p>
             </section>
         </div>
     )

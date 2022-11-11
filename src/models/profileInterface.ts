@@ -3,6 +3,7 @@ export interface ProfileInfo {
     name: string;
     nickname: string;
     lastname: string;
+    fullname: string;
     age: string;
     sports: Array<string>;
     skateboardingstatistics: {

@@ -5,6 +5,7 @@
             "name": "Ricky",
             "nickname": "Rickmeister",
             "lastname": "Johansson",
+            "fullname": "Ricky Johansson",
             "age": "30",
             "sports": ["Skateboarding", "Counter-Strike"],
             "skateboardingstatistics": 
@@ -262,6 +263,7 @@
             "name": "Ryan",
             "nickname": "none",
             "lastname": "Sheckler",
+            "fullname": "Ryan Sheckler",
             "age": "32",
             "sports": ["Skateboarding"],
             "skateboardingstatistics": 
@@ -348,7 +350,7 @@
                 "resultId": 9,
                 "competition": "Sacramento Skateboarding",
                 "winner": "Ryan Sheckler",
-                "placement": "2:a",
+                "placement": "1:a",
                 "date": "2021-01-11",
                 "participants": ["Mark Johansson", "Ryan Sheckler", "Adam Adamsson",
                  "Ryan Reynolds", "Anders Andersson", "Beatrice Thomsson"]
@@ -356,7 +358,7 @@
                 {
                 "resultId": 10,
                 "competition": "Sacramento Skateboarding",
-                "winner": "Ryan Sheckler",
+                "winner": "Ryan Reynolds",
                 "placement": "3:a",
                 "date": "2021-09-14",
                 "participants": ["Mark Johansson", "Ryan Sheckler", "Adam Adamsson",
@@ -365,7 +367,7 @@
                 {
                 "resultId": 11,
                 "competition": "Tampa Skateboarding",
-                "winner": "Ryan Sheckler",
+                "winner": "Adam Adamsson",
                 "placement": "2:a",
                 "date": "2021-02-12",
                 "participants": ["Mark Johansson", "Ryan Sheckler", "Adam Adamsson"]
@@ -403,6 +405,7 @@
             "name": "Jamie",
             "nickname": "none",
             "lastname": "Thomas",
+            "fullname": "Jamie Thomas",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -441,6 +444,7 @@
             "name": "Rodney",
             "nickname": "none",
             "lastname": "Mullen",
+            "fullname": "Rodney Mullen",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -479,6 +483,7 @@
             "name": "Mike",
             "nickname": "none",
             "lastname": "Vallelly",
+            "fullname": "Mike Vallelly",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -517,6 +522,7 @@
             "name": "Paul",
             "nickname": "none",
             "lastname": "Rodriguez",
+            "fullname": "Paul Rodriguez",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -555,6 +561,7 @@
             "name": "Tony",
             "nickname": "none",
             "lastname": "Hawk",
+            "fullname": "Tony Hawk",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -593,6 +600,7 @@
             "name": "Marc",
             "nickname": "none",
             "lastname": "Johnsson",
+            "fullname": "Marc Johnsson",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -630,6 +638,7 @@
             "name": "Rob",
             "nickname": "none",
             "lastname": "Dyrdek",
+            "fullname": "Rob Dyrdek",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -667,6 +676,7 @@
             "name": "Ryan",
             "nickname": "none",
             "lastname": "Reynolds",
+            "fullname": "Ryan Reynolds",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -701,9 +711,10 @@
 
         {
             "userId": 11,
-            "name": "",
+            "name": "BaseCS",
             "nickname": "BaseCS",
             "lastname": "",
+            "fullname": "BaseCS",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -738,9 +749,10 @@
 
         {
             "userId": 12,
-            "name": "",
+            "name": "GenG",
             "nickname": "GenG",
             "lastname": "",
+            "fullname": "GenG",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -776,9 +788,10 @@
 
         {
             "userId": 13,
-            "name": "",
+            "name": "BananaH",
             "nickname": "BananaH",
             "lastname": "",
+            "fullname": "BananaH",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -814,9 +827,10 @@
 
         {
             "userId": 14,
-            "name": "",
+            "name": "mYnx",
             "nickname": "mYnx",
             "lastname": "",
+            "fullname": "mYnx",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -852,9 +866,10 @@
 
         {
             "userId": 15,
-            "name": "",
+            "name": "xReloadx",
             "nickname": "xReloadx",
             "lastname": "",
+            "fullname": "xReloadx",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -890,9 +905,10 @@
 
         {
             "userId": 16,
-            "name": "",
+            "name": "Lam3ye",
             "nickname": "Lam3ye",
             "lastname": "",
+            "fullname": "Lam3ye",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -928,9 +944,10 @@
 
         {
             "userId": 17,
-            "name": "",
+            "name": "Bulls3Y3",
             "nickname": "Bulls3Y3",
             "lastname": "",
+            "fullname": "Bulls3Y3",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -966,9 +983,10 @@
 
         {
             "userId": 18,
-            "name": "",
+            "name": "G3KkoH",
             "nickname": "G3KkoH",
             "lastname": "",
+            "fullname": "G3KkoH",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -1004,9 +1022,10 @@
 
         {
             "userId": 19,
-            "name": "",
+            "name": "Bo0ne5",
             "nickname": "Bo0ne5",
             "lastname": "",
+            "fullname": "Bo0ne5",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 
@@ -1042,9 +1061,10 @@
 
         {
             "userId": 20,
-            "name": "",
+            "name": "Cypher",
             "nickname": "Cypher",
             "lastname": "",
+            "fullname": "Cypher",
             "age": "",
             "sports": [""],
             "skateboardingstatistics": 

@@ -42,6 +42,7 @@ function App() {
   });
 
   const hidden = profileOverlay ? "-hidden" : "-show";
+  
 
   const filteredProfiles = filterProfiles.map((profile) => {
     return < ProfileCard key={profile.userId} name={profile.name} lastname={profile.lastname}
@@ -74,14 +75,14 @@ function App() {
         <Routes>
 
           <Route path="/my-page/mycsgames/addmatch" element={<AddMatch formMatch={formMatch}
-           setFormMatch={setFormMatch}/>} />
+           setFormMatch={setFormMatch} />} />
 
           <Route path="/my-page/myskateboardcompetitions/addcompetition" element={<AddCompetition 
           formCompetition={formCompetition} setFormCompetition={setFormCompetition}/>} />
 
           <Route path="/my-page/mycsgames" element={<Counterstrike csResult={csResult} setCsResult={setCsResult}/>} />
           <Route path="/my-page/myskateboardcompetitions" element={<Skateboarding result={result} setResult={setResult}
-          personalInfo={personalInfo}/>}/>
+          profileName={profileName}/>}/>
           <Route path="/my-page" element={< Profile profileName={profileName} personalInfo={personalInfo}/>}/>
           <Route path="/statistics" element={< Statistics />} />
           <Route path="/" element={< Main />}/> 
