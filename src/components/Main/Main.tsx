@@ -8,7 +8,11 @@ import jsonData from '../../users.json';
 import { Competition } from '../../models/competitionInterface';
 import { Match } from '../../models/matchInterface';
 
-const Main = () => {
+interface Props {
+    profileName: string;
+}
+
+const Main = ({profileName}: Props) => {
     
 
     const [skateboardResults, setSkateboardResults] = useState<Competition[]>(jsonData.users[0].skateboardingresults);
@@ -19,7 +23,7 @@ const Main = () => {
     const tenSkateboardResults = reversedSkateResults.map((result) => {   
         if (skateCounter < 10 && reversedSkateResults.length > 0) {
             skateCounter ++;
-            return < SkateboardResult key={result.resultId} result={result}/>
+            return < SkateboardResult key={result.resultId} result={result} profileName={profileName}/>
         }
     });
 

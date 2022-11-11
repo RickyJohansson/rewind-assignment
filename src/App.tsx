@@ -85,7 +85,7 @@ function App() {
           profileName={profileName}/>}/>
           <Route path="/my-page" element={< Profile profileName={profileName} personalInfo={personalInfo}/>}/>
           <Route path="/statistics" element={< Statistics />} />
-          <Route path="/" element={< Main />}/> 
+          <Route path="/" element={< Main profileName={profileName}/>}/> 
         </Routes>
         < Footer />
     </div>
