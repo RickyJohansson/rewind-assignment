@@ -63,7 +63,9 @@ const AddMatch = ({formMatch, setFormMatch}: Props) => {
             }
         });
 
-        findNames.map((user) => {
+        const filteredFindNames = [...findNames].filter((name, index) => findNames.indexOf(name) === index);
+
+        filteredFindNames.map((user) => {
             const lastUser = [...jsonData.users].slice(-1);
             const lastUserId = lastUser[0].userId;
             jsonData.users.push({
